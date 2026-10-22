@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - Main</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="logo">NETFLIX</div>
+  <h2>Login</h2>
+  <form onsubmit="window.location.href='contact.html'; return false;">
+    <label>Email Address</label>
+    <input type="email" placeholder="you@example.com" required>
+    <label>Password</label>
+    <input type="password" placeholder="Password" required>
+    <div class="row">
+      <label><input type="checkbox" style="width:auto;"> Remember me</label>
+      <a href="#" class="link-red">Forgot password?</a>
+    </div>
+    <button class="btn-red" type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="#" class="link-red">Sign up</a></p>
+</div>
+</body>
+</html>
